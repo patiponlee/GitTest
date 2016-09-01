@@ -13,7 +13,31 @@
     tools:showIn="@layout/activity_main">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Main Layout"
+        android:id="@+id/textView"
+        android:layout_marginBottom="50dp"
+        android:gravity="center_horizontal"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="101dp"
+        android:src="@drawable/a" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:singleLine="false" />
 </RelativeLayout>
